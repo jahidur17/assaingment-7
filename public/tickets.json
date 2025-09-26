@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "Fix critical bug in payment gateway",
+    "description": "The new payment gateway is sporadically failing, preventing customers from completing purchases.",
+    "name": "jahid",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2025-09-25"
+  },
+  {
+    "id": 2,
+    "title": "Add a new 'Help Center' section",
+    "description": "Develop and integrate a new help center with an FAQ and articles to assist users with common issues.",
+    "name": "nayeem",
+    "priority": "Medium",
+    "status": "To Do",
+    "createdAt": "2025-09-24"
+  },
+  {
+    "id": 3,
+    "title": "Update SSL certificate for website",
+    "description": "The SSL certificate for the main website is expiring soon. It needs to be renewed and installed to maintain secure connections.",
+    "name": "jhon smith",
+    "priority": "High",
+    "status": "Done",
+    "createdAt": "2025-09-23"
+  },
+  {
+    "id": 4,
+    "title": "Optimize image loading speed",
+    "description": "Images on the product pages are loading slowly, impacting the user experience. Optimize them for faster delivery without losing quality.",
+    "name": "messi",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2025-09-22"
+  },
+  {
+    "id": 5,
+    "title": "Implement multi-language support",
+    "description": "Add support for Spanish and French on the website to cater to a wider audience.",
+    "name": "ronaldo",
+    "priority": "Low",
+    "status": "To Do",
+    "createdAt": "2025-09-21"
+  },
+  {
+    "id": 6,
+    "title": "Fix broken 'Contact Us' form",
+    "description": "The 'Contact Us' form is not submitting entries correctly. Submissions are failing silently.",
+    "name": "jhonson",
+    "priority": "High",
+    "status": "Done",
+    "createdAt": "2025-09-20"
+  },
+  {
+    "id": 7,
+    "title": "Create new user permission levels",
+    "description": "Develop a new set of user roles with specific, limited access to sensitive data and features.",
+    "name": "tarek",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2025-09-19"
+  },
+  {
+    "id": 8,
+    "title": "Automate daily report generation",
+    "description": "Create a script to automatically generate and email daily sales reports to the management team.",
+    "name": "mostafiz",
+    "priority": "Low",
+    "status": "To Do",
+    "createdAt": "2025-09-18"
+  },
+  {
+    "id": 9,
+    "title": "Integrate with new CRM software",
+    "description": "Connect our current system with the new HubSpot CRM to streamline customer data management.",
+    "name": "salman",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2025-09-17"
+  },
+  {
+    "id": 10,
+    "title": "Redesign user profile page",
+    "description": "Give the user profile page a modern redesign to improve user experience and aesthetics.",
+    "name": "imran",
+    "priority": "Medium",
+    "status": "Done",
+    "createdAt": "2025-09-16"
+  },
+  {
+    "id": 11,
+    "title": "Fix broken links in footer",
+    "description": "Several links in the website footer, including 'About Us' and 'Careers,' are leading to 404 pages.",
+    "name": "nizuhm",
+    "priority": "Low",
+    "status": "In Progress",
+    "createdAt": "2025-09-15"
+  },
+  {
+    "id": 12,
+    "title": "Update mobile app privacy policy",
+    "description": "The mobile application's privacy policy needs to be updated to reflect recent legal changes. This is a critical legal compliance task.",
+    "name": "ubayed",
+    "priority": "High",
+    "status": "To Do",
+    "createdAt": "2025-09-14"
+  }
+]
