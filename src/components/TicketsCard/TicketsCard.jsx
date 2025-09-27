@@ -1,17 +1,21 @@
-import React, { use } from 'react';
-import ellipse22 from '../../assets/Ellipse 22.png'
-import jahid from '../../assets/jk.png'
+import React, { use } from "react";
+import ellipse22 from "../../assets/Ellipse 22.png";
+import jahid from "../../assets/jk.png";
 
-const TicketsCard = ({ ticketsPromise, handleCardClick }) => {
+const TicketsCard = ({
+  ticketsPromise,
+  handleCardClick,
+  selectedTickets,
+  handleComplete,
+}) => {
   const ticketsData = use(ticketsPromise);
-//   console.log(ticketsData);
   return (
     <div className="max-w-[1200px] mx-auto grid md:grid-cols-4 grid-rows-1 gap-5">
       <div className="col-span-3 grid md:grid-cols-2 grid-rows-1  gap-5 ">
         {ticketsData.map((ticket) => (
           <div
             key={ticket.id}
-            onClick={() =>handleCardClick(ticket.status)}
+            onClick={() => handleCardClick(ticket)}
             className="p-1 shadow-lg rounded-md cursor-pointer"
           >
             <div className="flex justify-between items-center">
@@ -58,17 +62,20 @@ const TicketsCard = ({ ticketsPromise, handleCardClick }) => {
       </div>
 
       <div className="col-span-1 ">
-        <div className="shadow-md p-2 mt-4 rounded-md ">
-          <h1 className="flex justify-center items-center font-semibold ">
-            Payment Failed - Card Declined
-          </h1>
-          <button
-            
-            className="btn text-white w-[270px] h-[50px] bg-[#02A53B] rounded-md mt-3"
-          >
-            Complete
-          </button>
-        </div>
+        {selectedTickets.map((ticket) => (
+          <div key={ticket.id} className="shadow-md p-2 mt-4 rounded-md ">
+            <h1 className="flex justify-center items-center font-semibold ">
+              {ticket.title}
+            </h1>
+
+            <button
+              onClick={() => handleComplete(ticket.id)}
+              className="btn text-white w-[270px] h-[50px] bg-[#02A53B] rounded-md mt-3"
+            >
+              Complete
+            </button>
+          </div>
+        ))}
       </div>
     </div>
   );
